@@ -117,6 +117,9 @@ video{
   -webkit-transform:rotateY(180deg);
   -moz-transform:rotateY(180deg);
 }
+.background_red{
+  background-color:#f6484a;
+}
 
 @media (max-width: 700px) {
   #show_chat {
