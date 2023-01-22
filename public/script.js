@@ -68,6 +68,22 @@ $(function () {
             $("#chat_message").val("");
         }
     })
+    $("#mute_button").click(function(){
+        const enabled=myStrem.getAudioTracks()[0].enabled
+        if (enabled){
+            myStream.getAudioTracks()[0].enabled=false
+            html=`<i class="fas fa-microphone-slash"></i>`
+            $("#mute_button").toggleClass("background_red")
+        }
+        else{
+            myStream.getAudioTracks()[0].enabled=true
+            html=`<i class="fas fa-microphone></i>`
+            $("#mute_button").toggleClass("background_red")
+        }
+    })
+    $("#stop_video").click(function(){
+        
+    })
 
 })
 
